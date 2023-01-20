@@ -269,6 +269,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -17.381, z: 0}
+--- !u!1 &606852964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606852965}
+  m_Layer: 0
+  m_Name: Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &606852965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606852964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -44.013725, y: -3.6529236, z: -11.367695}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070236847
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +313,7 @@ GameObject:
   - component: {fileID: 1070236850}
   - component: {fileID: 1070236849}
   - component: {fileID: 1070236848}
+  - component: {fileID: 1070236853}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -296,7 +328,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070236847}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfccb229493b98a45b64b679b967c7cd, type: 3}
   m_Name: 
@@ -383,6 +415,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1070236853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070236847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2699386af09b54af5bd5d8546beac1c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: {fileID: 606852964}
+  speed: 5
+  forward: 1
+  volumePoint: 5
 --- !u!1 &1476901663
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +634,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2037370108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,7 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63feb3a3cd499864f92b16f26e1d6e1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PathType: 0
+  PathType: 1
   movementDirection: 1
   moveingTo: 0
   PathElements:

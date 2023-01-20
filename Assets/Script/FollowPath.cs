@@ -13,7 +13,7 @@ public class FollowPath : MonoBehaviour
     public MovementPath MyPath;
     public float speed = 1;
     public float MaxDistance = .1f;
-
+    
     private IEnumerator<Transform> pointInPath;
 
     void Start()
